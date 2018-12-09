@@ -1,0 +1,358 @@
+html body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+}
+input:focus {
+  outline: none;
+}
+.topBox {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.topBox .slides {
+  position: relative;
+  width: 400%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.topBox .slides .slideIMG {
+  width: 25%;
+  display: block;
+  float: left;
+}
+.topBox .coverBG {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59,61,64,0.502);
+}
+.topBox .coverBG .header {
+  position: relative;
+  width: 100%;
+  height: 13%;
+  user-select: none;
+}
+.topBox .coverBG .header .languageBox {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 16px;
+  line-height: 16px;
+  color: #83868c;
+  font-size: 11px;
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  cursor: pointer;
+}
+.topBox .coverBG .header .languageBox .break {
+  margin: 0 10px;
+}
+.topBox .coverBG .header .languageBox .chosed {
+  color: #fff;
+}
+.topBox .coverBG .header .menuBox {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+  height: 16px;
+  line-height: 16px;
+}
+.topBox .coverBG .header .menuBox .menu {
+  vertical-align: top;
+  margin: 0 10px;
+  box-sizing: border-box;
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Montserrat-Bold;
+  cursor: pointer;
+}
+.topBox .coverBG .header .iconBox {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 16px;
+  line-height: 8px;
+}
+.topBox .coverBG .header .iconBox .icon {
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.topBox .coverBG .header .iconBox .facebook {
+  width: 8px;
+  height: 16px;
+  cursor: pointer;
+}
+.topBox .coverBG .header .iconBox .twitter {
+  width: 17px;
+  height: 13px;
+  cursor: pointer;
+}
+.topBox .coverBG .header .iconBox .ins {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.topBox .coverBG .slideCoverBox {
+  position: relative;
+  width: 100%;
+  height: 77%;
+}
+.topBox .coverBG .slideCoverBox .leftButton {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  left: 8%;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+.topBox .coverBG .slideCoverBox .rightButton {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  right: 8%;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+.topBox .coverBG .slideCoverBox .INFBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 422px;
+  text-align: center;
+  color: #fff;
+}
+.topBox .coverBG .slideCoverBox .INFBox .logo {
+  width: 63px;
+  height: 63px;
+  margin-bottom: 10px;
+}
+.topBox .coverBG .slideCoverBox .INFBox .title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 10px 0px;
+}
+.topBox .coverBG .slideCoverBox .INFBox .tip {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-family: Montserrat-Bold;
+  font-weight: 400;
+  font-size: 18px;
+}
+.centerBox {
+  position: relative;
+  width: 100%;
+  height: 165px;
+  background-color: #3b3d40;
+}
+.centerBox .inputHolder {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 60px;
+  height: 45px;
+  line-height: 45px;
+}
+.centerBox .inputHolder .Email {
+  display: block;
+  vertical-align: top;
+  position: absolute;
+  left: 0px;
+  width: 20%;
+  height: 45px;
+  background-color: #585a5c;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: #fff;
+}
+.centerBox .inputHolder .Email::-webkit-input-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .Email:-moz-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .Email::-moz-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .Email:-ms-input-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .InvestmentBox {
+  display: block;
+  position: absolute;
+  left: 22%;
+  width: 57%;
+  height: 45px;
+}
+.centerBox .inputHolder .InvestmentBox .Investment {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  background-color: #585a5c;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 40px;
+  color: #fff;
+}
+.centerBox .inputHolder .InvestmentBox .Investment::-webkit-input-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .InvestmentBox .Investment:-moz-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .InvestmentBox .Investment::-moz-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .InvestmentBox .Investment:-ms-input-placeholder {
+  color: #fff;
+}
+.centerBox .inputHolder .InvestmentBox .Investment::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.centerBox .inputHolder .InvestmentBox .icon {
+  position: absolute;
+  width: 10px;
+  height: 7px;
+  right: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+.centerBox .inputHolder .startButton {
+  display: block;
+  vertical-align: top;
+  position: absolute;
+  right: 0;
+  width: 18%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Montserrat-Bold;
+  border-radius: 22.5px;
+  background-color: #2e71f2;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.bottomBox {
+  position: relative;
+  width: 100%;
+  height: 665px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.bottomBox .bottomINFBox {
+  position: absolute;
+  width: 400px;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.bottomBox .bottomINFBox .logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+}
+.bottomBox .bottomINFBox .title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #3b3d40;
+  font-size: 52px;
+  font-weight: bold;
+  font-family: Montserrat-Bold;
+  margin-bottom: 30px;
+}
+.bottomBox .bottomINFBox .tip {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: #656b6f;
+  font-weight: 400;
+  font-family: PTSerif-Regular;
+  margin-top: 6px;
+}
+.bottomBox .bottomList {
+  position: absolute;
+  bottom: 60px;
+  left: 8%;
+  right: 8%;
+  height: 150px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+.bottomBox .bottomList .listItem {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 150px;
+}
+.bottomBox .bottomList .listItem .icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+.bottomBox .bottomList .listItem .one {
+  width: 25px;
+}
+.bottomBox .bottomList .listItem .two {
+  height: 23px;
+}
+.bottomBox .bottomList .listItem .three {
+  width: 16px;
+}
+.bottomBox .bottomList .listItem .four {
+  width: 23px;
+}
+.bottomBox .bottomList .listItem .title {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  color: #3b3d40;
+  font-family: Montserrat-Bold;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.bottomBox .bottomList .listItem .tip {
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656b6f;
+  font-family: PTSerif-Regular;
+}

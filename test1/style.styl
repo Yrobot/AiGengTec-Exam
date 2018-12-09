@@ -1,0 +1,309 @@
+html body 
+    padding 0
+    margin 0
+    width 100%
+    height 100%
+
+
+input  
+    appearance none
+    -webkit-appearance none
+    outline none
+    border 0
+    &:focus
+        outline none
+
+.topBox
+    width 100%
+    position relative
+    overflow hidden
+    .slides
+        position relative
+        width 400%
+        overflow hidden
+        transition all 0.5s 
+        .slideIMG
+            width 25%
+            display block
+            float left
+    .coverBG
+        position absolute
+        top 0px
+        left 0px
+        width 100%
+        height 100%
+        background-color #3b3d4080
+        .header
+            position relative
+            width 100%
+            height 13%
+            user-select none
+            // background-color #fff
+            .languageBox
+                position absolute
+                left 8%
+                top 50%
+                transform translate(0,-50%)
+                height 16px
+                line-height 16px
+                color #83868C
+                font-size 11px 
+                font-family Montserrat-Bold
+                font-weight bold
+                cursor pointer
+                .break
+                    margin 0 10px
+                .chosed
+                    color #fff
+            .menuBox 
+                position absolute
+                width 100%
+                left 50%
+                top 50%
+                transform translate(-50%,-50%)
+                white-space nowrap
+                text-align center
+                height 16px
+                line-height 16px
+                .menu  
+                    vertical-align top
+                    margin 0 10px
+                    box-sizing border-box
+                    font-size 11px
+                    color #fff
+                    font-weight bold
+                    font-family Montserrat-Bold
+                    cursor pointer
+            .iconBox
+                position absolute
+                right  8%
+                top 50%
+                transform translate(0,-50%)
+                height 16px
+                line-height 8px
+                .icon
+                    vertical-align middle
+                    margin 0 10px
+                .facebook
+                    width 8px
+                    height 16px
+                    cursor pointer
+                .twitter
+                    width 17px
+                    height 13px
+                    cursor pointer
+                .ins
+                    width 16px
+                    height 16px
+                    cursor pointer
+        .slideCoverBox
+            position relative
+            width 100%
+            height 77%
+            .leftButton
+                position absolute
+                width 76px
+                height 76px
+                left 8%
+                top 50%
+                transform translate(0,-50%)
+                cursor pointer
+            .rightButton
+                position absolute
+                width 76px
+                height 76px
+                right 8%
+                top 50%
+                transform translate(0,-50%)
+                cursor pointer
+            .INFBox
+                position absolute
+                left 50%
+                top 50%
+                transform translate(-50%,-50%)
+                width 422px
+                text-align center
+                color #fff
+                .logo
+                    width 63px
+                    height 63px
+                    margin-bottom 10px
+                .title
+                    width 100%
+                    height 50px
+                    line-height 50px
+                    font-family Montserrat-Bold
+                    font-weight bold
+                    font-size 50px  
+                    margin 10px 0px 
+                .tip
+                    width 100%
+                    height 24px
+                    line-height 24px
+                    font-family Montserrat-Bold
+                    font-weight 400
+                    font-size 18px  
+            
+.centerBox
+    position relative
+    width 100%
+    height 165px
+    background-color #3B3D40
+    .inputHolder  
+        position absolute
+        left 8%
+        right 8%
+        top 60px
+        height 45px
+        line-height 45px
+        .Email
+            display block
+            vertical-align top
+            position absolute
+            left 0px
+            width 20%
+            height 45px
+            background-color #585A5C
+            border-radius 2px
+            box-sizing border-box
+            padding-left 10px
+            color #fff
+            &::-webkit-input-placeholder 
+                color #fff
+            &:-moz-placeholder
+                color #fff
+            &::-moz-placeholder
+                color #fff
+            &:-ms-input-placeholder
+                color #fff
+        .InvestmentBox
+            display block
+            position absolute
+            left 22%
+            width 57%
+            height 45px
+            .Investment
+                width 100%
+                height 100%
+                vertical-align top
+                background-color #585A5C
+                border-radius 2px
+                box-sizing border-box
+                padding-left 10px
+                padding-right 40px
+                color #fff
+                &::-webkit-input-placeholder 
+                    color #fff
+                &:-moz-placeholder
+                    color #fff
+                &::-moz-placeholder
+                    color #fff
+                &:-ms-input-placeholder
+                    color #fff
+                &::-webkit-calendar-picker-indicator
+                    display none
+            .icon
+                position absolute
+                width 10px
+                height 7px
+                right 15px
+                top 50%
+                transform translate(0,-50%)
+                cursor pointer
+        .startButton
+            display block
+            vertical-align top
+            position absolute
+            right 0
+            width 18%
+            height 45px
+            line-height 45px
+            font-size 10px
+            font-weight bold
+            color #fff
+            font-family Montserrat-Bold
+            border-radius 22.5px
+            background-color #2E71F2
+            text-align center
+            cursor pointer
+            user-select none
+
+.bottomBox
+    position relative
+    width 100%
+    height 665px
+    background-color #fff
+    box-sizing border-box
+    .bottomINFBox
+        position absolute
+        width 400px
+        top 100px
+        left 50%
+        transform translate(-50%,0)
+        text-align center
+        .logo
+            width 150px
+            height 150px
+            margin-bottom 30px
+        .title
+            width 100%
+            height 40px
+            line-height 40px
+            color #3B3D40
+            font-size 52px  
+            font-weight bold
+            font-family Montserrat-Bold
+            margin-bottom 30px
+        .tip
+            width 100%
+            height 20px
+            line-height 20px
+            font-size 20px  
+            color #656B6F
+            font-weight 400
+            font-family PTSerif-Regular
+            margin-top 6px
+    .bottomList
+        position absolute
+        bottom 60px
+        left 8%
+        right 8%
+        height 150px
+        text-align center
+        box-sizing border-box
+        padding-top 30px
+        .listItem
+            float left
+            position relative
+            width 25%
+            height 150px
+            .icon
+                width 25px
+                height 25px
+                vertical-align middle
+                margin-bottom 15px
+            .one 
+                width 25px
+            .two
+                height 23px
+            .three
+                width 16px
+            .four
+                width 23px
+            .title
+                width 100%
+                height 20px
+                line-height 20px
+                color #3B3D40
+                font-family Montserrat-Bold
+                font-size 14px
+                font-weight bold 
+                margin-bottom 6px
+            .tip
+                width 100%
+                height 16px
+                line-height 16px
+                font-size 14px  
+                font-weight 400
+                color #656B6F
+                font-family PTSerif-Regular

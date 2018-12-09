@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>艾耕科技笔试-静态页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topBox">
+        <div class="slides" id="slides"></div>
+        <div class="coverBG">
+            <div class="header">
+                <div class="languageBox">
+                    <span>RU</span>
+                    <span class="break">/</span>
+                    <span class="chosed">EN</span>
+                </div>
+                <div class="menuBox">
+                    <span class="menu">PROJECTS</span>
+                    <span class="menu">ABOUT US</span>
+                    <span class="menu">STORIES</span>
+                    <span class="menu">CONTACT</span>
+                </div>
+                <div class="iconBox">
+                    <img class="icon facebook" src="./icons/Facebook@2x.png" alt="" srcset="">
+                    <img class="icon twitter" src="./icons/Twitter@2x.png" alt="" srcset="">
+                    <img class="icon ins" src="./icons/Instagram@2x.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="slideCoverBox">
+                <img onclick="slideLeft()" class="leftButton" src="./icons//Left Arrow@2x.png" alt="" srcset="">
+                <img onclick="slideRight()"  class="rightButton" src="./icons/Right Arrow@2x.png" alt="" srcset="">
+                <div class="INFBox">
+                    <img class="logo" src="./icons/Baikal Logo@2x.png" alt="" srcset="">
+                    <div class="title">We Build Objects</div>
+                    <div class="title">And Spaces</div>
+                    <div style="margin-top:20px" class="tip">Support bright students today for</div>
+                    <div class="tip">a better tomorrow</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centerBox">
+        <div class="inputHolder">
+            <input type="text" class="Email" placeholder="E-mail">
+            <div class="InvestmentBox">
+                <input type="text" class="Investment" placeholder="Investment" list="list">
+                <datalist id="list">
+                    <option value="aaa"></option>
+                    <option value="vvv"></option>
+                    <option value="ddd"></option>
+                </datalist>
+                <img class="icon" src="./icons/Down Arrow@2x.png" alt="" srcset="">
+            </div>
+            <div class="startButton">LET’S START</div>
+        </div>
+    </div>
+    <div class="bottomBox">
+        <div class="bottomINFBox">
+            <img class="logo" src="./icons//Icon4@2x.png" alt="" srcset="">
+            <div class="title">Your Next Move</div>
+            <div class="tip">Helping talented students unlock their full</div>
+            <div class="tip">potential. Help us help them thrive.</div>
+        </div>
+        <div class="bottomList">
+            <div class="listItem">
+                <img src="./icons/Icon3@2x.png" alt="" class="icon one">
+                <div class="title">EXPERIENCE</div>
+                <div class="tip">72% of the students</div>
+                <div class="tip">attended on scholarship</div>
+            </div>
+            <div class="listItem">
+                <img src="./icons/Icon2@2x.png" alt="" class="icon two">
+                <div class="title">OUR FUTURE</div>
+                <div class="tip">20% of its student body is</div>
+                <div class="tip">currently under scholarship</div>
+            </div>
+            <div class="listItem">
+                <img src="./icons/Icon1@2x.png" alt="" class="icon three">
+                <div class="title">ACADEMIC TALENTS</div>
+                <div class="tip">More than 1000 scholarships</div>
+                <div class="tip">have been awarded</div>
+            </div>
+            <div class="listItem">
+                <img src="./icons/Icon@2x.png" alt="" class="icon four">
+                <div class="title">BRILLIANT MINDS</div>
+                <div class="tip">Anatolia College has always</div>
+                <div class="tip">relied on donations</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var showIndex = 0;
+    const slides = document.getElementById('slides');
+    //添加图片只需要修改imgList
+    const imgList = ['./slideIMG.png', './slideIMG.png', './slideIMG.png', './slideIMG.png', './slideIMG.png'];
+    const imgNum = imgList.length;
+    const slideStyle = `width: ${100 * imgNum}%;`
+    slides.style = slideStyle;
+    imgList.map(val => {
+        let img = document.createElement('img');
+        img.className = 'slideIMG';
+        img.src = val;
+        img.style = `width: ${100 / imgNum}%;`
+        slides.appendChild(img)
+    })
+
+    function slideRight() {
+        if (showIndex < (imgNum - 1)) {
+            showIndex++;
+            slides.style = slideStyle + `transform: translate(-${showIndex * (100 / imgNum)}%, 0);`;
+        }
+    }
+    function slideLeft() {
+        if (showIndex > 0) {
+            showIndex--;
+            slides.style = slideStyle + `transform: translate(-${showIndex * (100 / imgNum)}%, 0);`;
+        }
+    }
+</script>
+
+</html>
