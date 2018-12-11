@@ -26,7 +26,7 @@ function singleLine2Json(cmd) {
     });
     return res;
 }
-
+ 
 /**
  * @description 根据','的数量获取相应位置的array
  * @author Yrobot
