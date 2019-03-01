@@ -3,18 +3,18 @@
 
 
 1.静态页面设计
-请根据提供的psd文件，完成一个静态（HTML）页面的设计，预览如下。
-![](http://ww1.sinaimg.cn/large/d586f89bly1g0n5n0vdf0j20fe0kw7dd.jpg)  
-要求：
-1. 尽可能按照设计稿样式实现（文字字体除外）；
-2. 页面应该设计为占满浏览器宽度；
-3. 请实现图片轮播效果（可用多张重复图片）；
-4. 提交HTML文件，便于我们检验。
-
-2.JavaScript编程题
-已知一个思维导图如下：
-![](http://ww1.sinaimg.cn/large/d586f89bly1g0n5nl11d5j20fd09gwmi.jpg)  
-该思维导图对应的数据如下
+请根据提供的psd文件，完成一个静态（HTML）页面的设计，预览如下。   
+![](http://ww1.sinaimg.cn/large/d586f89bly1g0n5n0vdf0j20fe0kw7dd.jpg)    
+要求：    
+1. 尽可能按照设计稿样式实现（文字字体除外）； 
+2. 页面应该设计为占满浏览器宽度；  
+3. 请实现图片轮播效果（可用多张重复图片）；  
+4. 提交HTML文件，便于我们检验。  
+ 
+2.JavaScript编程题  
+已知一个思维导图如下：   
+![](http://ww1.sinaimg.cn/large/d586f89bly1g0n5nl11d5j20fd09gwmi.jpg)    
+该思维导图对应的数据如下   
 ```
 奴隶社会,非洲,古埃及文明,金字塔
 ,亚洲,两河流域文明,汉谟拉比法典
